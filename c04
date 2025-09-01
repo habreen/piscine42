@@ -1,4 +1,5 @@
 # i forgot do download my c04 so ill do it down here from what i can recall
+#remember to include header file and unistd.h
 
 EX00 - ft_strlen.c
 int ft_strlen(char *str)
