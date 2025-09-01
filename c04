@@ -35,9 +35,10 @@ c = n %  10 + '0';
 EX03 -  ft_atoi.c
 int ft_atoi(char *str)
 {
-  int i;
-  int result;
-  int sign;
+  int i = 0;
+  int result = 0;
+  int sign = 1;
+
 while(str[i] == 32) // need to account for all spaces i forgot the ascii values so include those
 {
   i++;
@@ -46,12 +47,12 @@ while(str[i] == '-' || str[i] == '+') // remember standard atoi only checks for 
 { 
   if(str[i] == '-')
   {
-    sign = - sign
+    sign = - sign;
   }
   i++;
 }
 while(str[i] >= '0' && str[i] <= '9')
 {
-  result = result * 10 + (str[i] - '0')
+  result = result * 10 + (str[i] - '0');
 }
-return resutl * sign
+return result * sign;
